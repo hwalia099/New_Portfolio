@@ -1,0 +1,25 @@
+{% extends "aboutme/aboutme2.html" %}
+
+{% load static %}
+
+{% block content %}
+   {% for project in projects %}
+        <div class="col-sm-6 col-md-4"><!--start element 1-->
+          <div  class="thumbnail shadow up-hover">
+            <img src="{{ project.image.url }}" height="100"/>
+            <div class="cust-caption">
+              <h3 class="stm-font">{{project.title}}</h3></a>
+              <p>{{project.description}} </p>
+            </div>
+          </div>
+        </div><!--end element 1-->
+          {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
+

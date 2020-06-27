@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html> hools
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="{% static "portfolio/hw.png" %}">
+  <title>Skill Bar</title>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="{% static "portfolio/skillbar.css" %}">
+
+</head>
+
+<body>
+<!-- partial:index.partial.html -->
+<div data-spy="scroll" data-target="#navbar" data-offset="50" >
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'home' %}"  title="my Website"><img src="{% static 'portfolio/hw.png' %}" /></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="{% url 'home' %}" ><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+         </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+<h1>SKILL BAR</h1>
+<div class="container" id="has"><div id="ha"><div class="wrapper">
+	<div class = "java first">Java<span>95%</span></div>
+</div>
+<div class="wrapper">
+	<div class = "python second">Python<span>90%</span></div>
+</div>
+<div class="wrapper">
+	<div class = "html third">HTML/CSS<span>75%</span></div>
+</div>
+<div class="wrapper">
+	<div class = "sql fourth">SQL<span>65%</span></div>
+</div>
+<div class="wrapper">
+	<div class = "ds fifth">DS/Algo<span>86%</span></div>
+</div>
+<div class="wrapper">
+	<div class = "rest fifth">RESTful Webservices<span>80%</span></div>
+</div>
+<div class="wrapper">
+	<div class = "backend sixth">Backend<span>85%</span></div>
+</div>
+</div>
+</div>
+<!-- partial -->
+
+    <footer id="links" class="main-nav stm-font dark-bg">
+         <div class="container">
+        <div class="col-sm-4 hidden-xs">
+          <ul class="list-unstyled">
+            <li>Created for <a href="http://www.freecodecamp.com/" target="_blank">freeCodeCamp</a></li>
+            <li>Powered by <a href="http://jquery.com/" target="_blank">jQuery</a></li>
+            <li>Designed with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li>Custom Graphics in <a href="http://inkscape.org/" target="_blank">Inkscape</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-8  center">
+            <img id="flogo" src="http://emant.altervista.org/ext/logo.png" alt="logo: EmAnt" title="logo" width="150px"/>
+            <p >contact me at <a href="mailto:mail@example.com">mail@example.com</a></p>
+            <p>Copyright &copy; 2015 by <a href="http://emant.altervista.org/" target="_blank">EmAnt</a></p>
+        </div>
+      </div>
+          </div>
+    </footer>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="{% static "portfolio/skillbar.js" %}"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js'></script>
+</body>
+</html>

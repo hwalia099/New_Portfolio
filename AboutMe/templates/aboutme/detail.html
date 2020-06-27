@@ -1,0 +1,13 @@
+  
+{% extends "portfolio/baseaboutme.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h1 class="text-center mt-5" id="blogdetailtitle">{{ obj.title }}</h1>
+
+{{ obj.description|safe }}
+<img src="{{obj.image.url}}" height="350" width="=480">
+
+{% endblock %}

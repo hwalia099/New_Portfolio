@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+   <link rel="icon" type="image/png" href="{% static "portfolio/hw.png" %}">
+  <title>Himanshu Walia</title>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="{% static "portfolio/style.css" %}"/>
+
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body data-spy="scroll" data-target="#navbar" data-offset="50" >
+    <nav id="navbar" class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="{% url 'home' %}"  title="My Website"><img src="{% static 'portfolio/hw.png' %}" /></a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="active"><a href="#home" class="hash"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+          <li><a href="#about" class="hash"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Tech Stack</a></li>
+          <li><a href="#portfolio" class="hash"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Projects</a></li>
+          <li><a href="{% static "portfolio/HimanshuWalia_CV.pdf" %}" target="_blank"><span class="	fa fa-file" aria-hidden="true"></span> Resume</a></li>
+          <li><a href="{% url 'AboutMe:aboutmehome' %}" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a></li>
+          <li><a href="{% url 'message' %}" target="_blank"><span class="glyphicon glyphicon-envelope"  ></span> Let's Click</a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <section id="home" class="main-nav">
+      <div class="heading dark-bg">
+        <div class="row">
+          <div class="col-sm-12 head">
+            <div class="logo">
+              <img src="{% static 'portfolio/me2.png' %}"   alt="EmAnt's Logo" />
+            </div>
+            <h1 class="stm-font">Hey! I am Himanshu Walia the Web developer with Key expertise in Java and Python. I turn code into greenback for a living. Drive below to know Geek me or <a href="{% url 'AboutMe:aboutmehome' %}" >click here</a> to unlock Geek-lite me :).
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <nav>
+            <ul class="list-inline links ">
+              <li><a class="btn btn-default btn-lg" href="https://github.com/hwalia099" title="HW on GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
+              <li><a class="btn btn-default btn-lg" href="https://www.instagram.com/h.walia099/" title="HW on Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/himanshu-walia/"  title="Hw on Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+              <li><a class="btn btn-default btn-lg" href="https://twitter.com/Hwalia099"  title="HW on Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row showcase stm-font">
+          <div class="col-sm-4 hidden-xs">
+            <div class="well shadow up-hover color-hover">
+              <h1><i class="fa fa-lightbulb-o"></i></h1>
+              <h2 >Eat();</h2>
+            </div>
+          </div>
+          <div class="col-sm-4 hidden-xs">
+            <div class="well shadow up-hover color-hover">
+              <h1 ><i class="fa fa-pencil-square-o"></i></h1>
+              <h2 >Sleep();</h2>
+            </div>
+          </div>
+          <div class="col-sm-4 hidden-xs">
+            <div class="well shadow up-hover color-hover">
+              <h1 ><i class="fa fa-code"></i></h1>
+              <h2 >Code();</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="about" class="main-nav">
+      <h1><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span>Tech-Stack</h1>
+      <div class="row">
+        <div class="col-sm-4 ">
+          <img src="{% static 'portfolio/coding.png' %}" height="320"  alt="description" title="Never ever settle for anything other than being the primary Key" class="img-circle shadow up-hover avatar">
+        </div>
+
+        <div class="col-sm-8 ">
+          <h2 class="text-primary stm-font" > <a role="button" href="{% url 'skillbar' %}" class="btn btn-info" title="Click here to see Skillbar">Languages/Key Skills</a> </h2>
+          <p>Java,Python,SQL,C++,HTML/CSS,Data structures and Algorithms,RESTful Webservices,Backend Webdevelopment</p>
+          <h2 class="text-primary stm-font" title="Click here to see Skillbar"> <a role="button" href="{% url 'skillbarTools' %}" class="btn btn-info">Tools/Databases</a> </h2>
+          <p>Eclipse,Postman,Git,Github,Maven,Tomcat,PyCharm,Android Studio,MySQl,MongoDB</p>
+          <h2 class="text-primary stm-font" > <a role="button" href="{% url 'skillbarFrameworks' %}" class="btn btn-info" title="Click here to see Skillbar">Frameworks/Platforms</a> </h2>
+          <p>Spring Boot/MVC/Security,Django,Hibernate,FLask,Linux,Docker,Tkinter</p>
+        </div>
+      </div>
+      </section>
+
+      <section id="portfolio" class="main-nav"><!--start portfolio-->
+      <h1><span class="glyphicon glyphicon-book" aria-hidden="true"></span>Projects</h1>
+      <div class="row"><!---start row-->
+      {% block content %}{% endblock %}
+
+      </div><!---end row-->
+      </section> <!--end portfolio-->
+    </div><!--end container-->
+    <footer id="links" class="main-nav stm-font dark-bg">
+         <div class="container">
+        <div class="col-sm-4 hidden-xs">
+          <ul class="list-unstyled">
+            <li>Created as <a href="{% url 'home' %}" >Personal Portfolio</a></li>
+            <li>Powered by <a href="http://jquery.com/" target="_blank">jQuery</a></li>
+            <li>Designed with <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
+            <li>Custom Graphics in <a href="http://inkscape.org/" target="_blank">Inkscape</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-8  center">
+            <img id="flogo" src="{% static 'portfolio/hw.png' %}" alt="logo: EmAnt" title="logo" width="150px"/>
+            <p >contact me at <a href="mailto:himanshuwalia099@gmail">himanshuwalia099@gmail.com</a></p>
+            <p>Copyright &copy; 2020 by Himanshu Walia</p>
+        </div>
+      </div>
+          </div>
+    </footer>
+</body>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js'></script><script  src="{% static "portfolio/script.js" %}"></script>
+
+</body>
+</html>

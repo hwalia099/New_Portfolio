@@ -1,0 +1,29 @@
+{% extends "portfolio/index.html" %}
+
+{% load static %}
+
+{% block content %}
+   {% for project in projects %}
+        <div class="col-sm-6 col-md-4"><!--start element 1-->
+          <div  class="thumbnail shadow up-hover">
+            <img src="{{ project.image.url }}"/>
+            <div class="cust-caption">
+                {% if project.url %}
+              <a href="{{ project.url }}" target="_blank"><h3 class="stm-font">{{project.title}}</h3></a>
+                {% else %}
+               <h3 class="stm-font">{{project.title}}</h3></a>
+                 {% endif %}
+              <p>{{project.description}} </p>
+            </div>
+          </div>
+        </div><!--end element 1-->
+          {% endfor %}
+{% endblock %}
+
+
+
+
+
+
+
+
