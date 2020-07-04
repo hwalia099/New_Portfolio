@@ -5,7 +5,7 @@ from django.core.mail import send_mail
 # Create your views here.
 def home(request):
     projects=Project.objects.all()
-    return render(request,'portfolio/home2.html',{'projects':projects})
+    return render(request,'portfolio/hometest.html',{'projects':projects})
 
 def message(request):
     print("jaihind")

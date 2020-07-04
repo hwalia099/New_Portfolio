@@ -1,0 +1,28 @@
+{% extends "portfolio/indextest.html" %}
+
+{% load static %}
+
+{% block content %}
+   {% for project in projects %}
+<hr>
+<div class="item">
+  <div class="featured-image">
+       {% if project.url %}
+    <a href="{{ project.url }}" target="_blank"><img src="{{ project.image.url }}" height="220" width="350"  > </a>
+        {% else %}
+      <img src="{{ project.image.url }}" height="250" width="400"   />
+       {% endif %}
+  </div>
+  <div class="description">
+    {% if project.url %}
+      <div><a href="{{ project.url }}" target="_blank"><strong style="font-size:1.6em">{{project.title}}</strong></a></div>
+       {% else %}
+       <div><strong style="font-size:1.6em">{{project.title}}</strong></div>
+        {% endif %}
+      <div >{{project.description}}</a><br></div>
+  </div>
+</div>
+<hr>
+          {% endfor %}
+{% endblock %}
+

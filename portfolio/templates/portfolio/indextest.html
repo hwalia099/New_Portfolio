@@ -8,8 +8,8 @@
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="{% static "portfolio/style.css" %}"/>
-
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="{% static "portfolio/styletest.css" %}"/>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
 </head>
 <body>
@@ -43,39 +43,53 @@
     </nav>
 
     <section id="home" class="main-nav">
+        <div id="canvas-wrap">
+    <canvas id="canvas"></canvas>
       <div class="heading dark-bg">
         <div class="row">
           <div class="col-sm-12 head">
-            <div class="logo">
-              <img src="{% static 'portfolio/mecompress.png' %}"   alt="" />
-            </div>
-            <h1 class="stm-font">Hey! I am Himanshu Walia the Backend developer with Key expertise in Java and Python. I turn code into greenback for a living. Drive below to know Geek me or <a href="{% url 'AboutMe:aboutmehome' %}" >click here</a> to unlock Geek-lite me :).
-            </h1>
-          </div>
-        </div>
-        <div class="row">
+          <div class="item">
+  <div class="featurede-imagee">
+
+      <img src="{% static 'portfolio/mecompress.png' %}"   alt="" height="420"  />
+
+  </div>
+
+  <div class="descriptione">
+
+      <div class="stm-font"  style="color:cyan;"><strong style="font-size:2.0em" >Hi,I'm Himanshu Walia:Backend Developer.</strong>
+      <p class="stm-font"   style="font-size:1.1em;color:white;">I'm a aspiring software engineer who focuses on writing clean,optimized and reliable code
+          with key expertise in Java & Python.I enjoy writing code,debugging,creating API's,Database queries(and occasionally designing).</p></div>
+
+
+  </div>
+</div>
+            <div class="row">
           <nav>
             <ul class="list-inline links ">
-              <li><a class="btn btn-default btn-lg" href="https://github.com/hwalia099" title="HW on GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
-              <li><a class="btn btn-default btn-lg" href="https://www.instagram.com/h.walia099/" title="HW on Instagram" target="_blank"><i class="fa fa-instagram"></i></a></li>
-              <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/himanshu-walia/"  title="Hw on Linkedin" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-              <li><a class="btn btn-default btn-lg" href="https://twitter.com/Hwalia099"  title="HW on Twitter" target="_blank"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="btn btn-default btn-lg" href="https://github.com/hwalia099" title="HW on GitHub" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li><a class="btn btn-default btn-lg" href="https://www.linkedin.com/in/himanshu-walia/"  title="Hw on Linkedin" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a class="btn btn-default btn-lg" href="https://www.hackerrank.com/himanshuwalia099"  title="HW on HackerRank" target="_blank"><i class="fab fa-hackerrank"></i></a></li>
             </ul>
           </nav>
         </div>
+          </div>
+        </div>
+
+      </div>
       </div>
       <div class="container">
         <div class="row showcase stm-font">
             <div class="col-sm-4 ">
             <div class="well shadow up-hover color-hover">
-              <h1><i class="fa fa-cutlery"></i></h1>
-              <h2 >Eat();</h2>
+              <h1><i class="fa fa-lightbulb-o"></i></h1>
+              <h2 >Think();</h2>
             </div>
           </div>
           <div class="col-sm-4 ">
             <div class="well shadow up-hover color-hover">
-              <h1 ><i class="fa fa-bed"></i></h1>
-              <h2 >Sleep();</h2>
+              <h1 ><i class="fa fa-plus-circle"></i></h1>
+              <h2 >Create();</h2>
             </div>
           </div>
        <div class="col-sm-4 ">
@@ -97,7 +111,7 @@
         </div>
 
         <div class="col-sm-8 ">
-          <p2 class="text-primary stm-font" > <a role="button" href="{% url 'skillbar' %}" class="btn btn-info" title="Click here to see Skillbar">Languages/Key Skills</a> </p2>
+          <p2 class="text-primary stm-font" > <a id="has" role="button" href="{% url 'skillbar' %}" class="btn btn-info" title="Click here to see Skillbar">Languages/Key Skills</a> </p2>
           <p>Java,Python,SQL,C++,HTML/CSS,Data structures and Algorithms<p>
           <p>RESTful Webservices,Backend Webdevelopment</p>
           <p2 class="text-primary stm-font" title="Click here to see Skillbar"> <a role="button" href="{% url 'skillbarTools' %}" class="btn btn-info">Tools/Databases</a> </p2>

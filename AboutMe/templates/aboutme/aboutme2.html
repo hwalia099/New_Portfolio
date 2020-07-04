@@ -8,7 +8,7 @@
   <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1"><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="{% static "portfolio/style.css" %}"/>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'><link rel="stylesheet" href="{% static "portfolio/styletest.css" %}"/>
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -27,7 +27,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href=""http://127.0.0.1:8000/"  title="my Website"><img src="{% static 'portfolio/hw.png' %}" /></a>
+        <a class="navbar-brand" href="{% url 'home' %}"  title="my Website"><img src="{% static 'portfolio/hw.png' %}" /></a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,17 +44,28 @@
     </nav>
 
     <section id="home" class="main-nav">
+        <div id="canvas-wrap">
+    <canvas id="canvas"></canvas>
       <div class="heading dark-bg">
         <div class="row">
           <div class="col-sm-12 head">
-            <div class="logo">
-              <img src="{% static 'portfolio/me1.png' %}"  alt="EmAnt's Logo" />
-            </div>
-            <h1 class="stm-font">Hey again! Ever heard of a man who could be bought with a pizza loaded with copious oregano and a drink?  ...
-            well! that's me and this is the best introduction I could come up with, after hours of endeavour :P.</h1>
-          </div>
-        </div>
-        <div class="row">
+              <div class="item">
+  <div class="featurede-imagee">
+
+      <img src="{% static 'portfolio/me2cpmpress.png' %}"   alt="" height="420"  />
+
+  </div>
+
+  <div class="descriptione">
+
+      <div class="stm-font"  style="color:cyan;"><strong style="font-size:2.0em" >Hi,I'm Himanshu Walia:Delightful Hullabaloo</strong>
+      <p class="stm-font"   style="font-size:1.0em;color:white;">I'm an engineer who covet to learn and dicover new things. I am a strong believer of "Do what you can, with what you have, where you are.”
+      -Theodore Roosevelt. I have a great passion for life and adrenaline, as long as they are in me, I'm in me :)  </p></div>
+
+
+  </div>
+</div>
+            <div class="row">
           <nav>
             <ul class="list-inline links ">
               <li><a class="btn btn-default btn-lg" href="https://github.com/hwalia099" title="HW on GitHub" target="_blank"><i class="fa fa-github"></i></a></li>
@@ -64,22 +75,25 @@
             </ul>
           </nav>
         </div>
-      </div>
+          </div>
+        </div>
+
+      </div></div>
       <div class="container">
         <div class="row showcase stm-font">
-          <div class="col-sm-4 hidden-xs">
+          <div class="col-sm-4 ">
             <div class="well shadow up-hover color-hover">
               <h1><i class="fas fa-snowboarding"></i></h1>
               <h2 >Live</h2>
             </div>
           </div>
-          <div class="col-sm-4 hidden-xs">
+          <div class="col-sm-4 ">
             <div class="well shadow up-hover color-hover">
-              <h1 ><i class="	far fa-laugh"></i></h1>
+              <h1 ><i class="far fa-laugh"></i></h1>
               <h2 >Laugh</h2>
             </div>
           </div>
-          <div class="col-sm-4 hidden-xs">
+          <div class="col-sm-4 ">
             <div class="well shadow up-hover color-hover">
               <h1 ><i class="far fa-heart"></i></h1>
               <h2 >Love</h2>
