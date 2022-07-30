@@ -34,7 +34,7 @@
           <li class="active"><a href="#home" class="hash"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
           <li><a href="#about" class="hash"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Tech Stack</a></li>
           <li><a href="#portfolio" class="hash"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Projects</a></li>
-          <li><a href="{% static "portfolio/HimanshuWalia_CV.pdf" %}" target="_blank"><span class="	fa fa-file" aria-hidden="true"></span> Resume</a></li>
+          <li><a href="{% url 'resume' %}" target="_blank"><span class="	fa fa-file" aria-hidden="true"></span> Resume</a></li>
           <li><a href="{% url 'AboutMe:aboutmehome' %}" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a></li>
           <li><a href="{% url 'message' %}" target="_blank"><span class="glyphicon glyphicon-envelope"  ></span> Let's Click</a></li>
         </ul>

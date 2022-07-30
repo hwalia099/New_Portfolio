@@ -12,7 +12,7 @@ SECRET_KEY = 'x6qz+q)k(@j__ifzk4=paz-+tl0zq_ub&b)8*!t7*-vesjiaf+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
-ALLOWED_HOSTS = ['hwalia099.pythonanywhere.com']
+ALLOWED_HOSTS = ['HimanshuWalia.pythonanywhere.com']
 
 
 # Application definition

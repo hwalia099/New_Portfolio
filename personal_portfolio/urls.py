@@ -20,14 +20,15 @@ from django.conf import settings
 from portfolio import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('',views.home,name='home'),
-    path('aboutme/', include('AboutMe.urls')),
-    path('message/',views.message,name='message'),
+    path('aboutme', include('AboutMe.urls')),
+    path('message',views.message,name='message'),
     path('',views.check, name='check'),
-    path('send/',views.mailfunc,name='send'),
-    path('skillbar/',views.skillbar,name='skillbar'),
-    path('skillbarTools/',views.skillbarTools,name='skillbarTools'),
-    path('skillbarFrameworks/',views.skillbarFrameworks,name='skillbarFrameworks'),
+    path('send',views.mailfunc,name='send'),
+    path('skillbar',views.skillbar,name='skillbar'),
+    path('skillbarTools',views.skillbarTools,name='skillbarTools'),
+    path('skillbarFrameworks',views.skillbarFrameworks,name='skillbarFrameworks'),
+    path('resume',views.resume,name='resume'),
 ]
 urlpatterns+=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

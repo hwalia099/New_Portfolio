@@ -34,7 +34,7 @@
           <li class="active"><a href="#home" class="hash"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
           <li><a href="#about" class="hash"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Tech Stack</a></li>
           <li><a href="#portfolio" class="hash"><span class="glyphicon glyphicon-book" aria-hidden="true"></span> Projects</a></li>
-          <li><a href="{% static "portfolio/HimanshuWalia_CV.pdf" %}" target="_blank"><span class="	fa fa-file" aria-hidden="true"></span> Resume</a></li>
+          <li><a href="{% url 'resume' %}" target="_blank"><span class="	fa fa-file" aria-hidden="true"></span> Resume</a></li>
           <li><a href="{% url 'AboutMe:aboutmehome' %}" ><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a></li>
           <li><a href="{% url 'message' %}" target="_blank"><span class="glyphicon glyphicon-envelope"  ></span> Let's Click</a></li>
         </ul>
@@ -51,15 +51,17 @@
           <div class="item">
   <div class="featurede-imagee">
 
-      <img src="{% static 'portfolio/mecompress.png' %}"   alt="" height="420"  />
+      <img src="{% static 'portfolio/mecc.png' %}"   alt="" height="420"  />
 
   </div>
 
   <div class="descriptione">
 
-      <div class="stm-font"  style="color:cyan;"><strong style="font-size:2.0em" >Hi,I'm Himanshu Walia:Backend Developer.</strong>
-      <p class="stm-font"   style="font-size:1.1em;color:white;">I'm a aspiring software engineer who focuses on writing clean,optimized and reliable code
-          with key expertise in Java & Python.I enjoy writing code,debugging,creating API's,Database queries(and occasionally designing).</p></div>
+      <div class="stm-font"  style="color:cyan;"><strong style="font-size:2.0em" >Hi I'm Himanshu Walia; Software Engineer.</strong>
+
+      <p class="stm-font"   style="font-size:1.1em;color:white;">I'm a software engineer who focuses on writing clean,optimized and reliable code
+          with key expertise in Java & Python. I believe creative engineers can create products that can connect millions of people; any engineer today could become a superhero tomorrow.</p>
+             <small><i><b>CURRENT STATUS:</b>This website is not maintained and is an archive of the projects I did when I was pursuing my bachelor's in technology. Currently I'm pursing MS in Software Engineering at Northeastern University, Boston.</i></small></div>
 
 
   </div>
@@ -112,13 +114,13 @@
 
         <div class="col-sm-8 ">
           <p2 class="text-primary stm-font" > <a id="has" role="button" href="{% url 'skillbar' %}" class="btn btn-info" title="Click here to see Skillbar">Languages/Key Skills</a> </p2>
-          <p>Java,Python,SQL,C++,HTML/CSS,Data structures and Algorithms<p>
-          <p>RESTful Webservices,Backend Webdevelopment</p>
+          <p>Java, Python, SQL, HTML, RPGLE, Data structures and Algorithms<p>
+          <p>RESTful Webservices, Backend Webdevelopment</p>
           <p2 class="text-primary stm-font" title="Click here to see Skillbar"> <a role="button" href="{% url 'skillbarTools' %}" class="btn btn-info">Tools/Databases</a> </p2>
-          <p>Eclipse,Postman,Git,Github,Maven,Tomcat</p>
-          <p>MySQl,MongoDB,PyCharm,Android Studio</p>
+          <p>Eclipse, Postman, Github, Maven, Tomcat, PyCharm, Android Studio</p>
+          <p>MySQl, MongoDB</p>
           <p2 class="text-primary stm-font" > <a role="button" href="{% url 'skillbarFrameworks' %}" class="btn btn-info" title="Click here to see Skillbar">Frameworks/Platforms</a> </p2>
-          <p>Spring Boot/MVC/Security,Django,Hibernate,FLask</p><p>Linux,Docker,Tkinter</p>
+          <p>Spring Boot/MVC/Security, Django, Hibernate</p><p>Linux, Docker, Tkinter</p>
         </div>
       </div>
       </section>
